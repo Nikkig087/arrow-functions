@@ -5,10 +5,50 @@
 
 // Vanilla JavaScript Function
 
-// Arrow Function With Parameters
+// function addTwoNumbers(a,b) {
+//     // code block
+//     return a + b
+// }
 
-// Single Line Arrow Function With Parameters
+// let sum = addTwoNumbers (3,5)
+// console.log(sum)
+
+
+
+// Arrow Function With Parameters
+// const cant be overwritten and must be defined
+
+ const addTwoNumbers = (a,b)=> {
+    // code block
+   return a + b
+ }
+
+ let sum = addTwoNumbers (3,5)
+console.log(sum)
+
+// Single Line Arrow Function With Parameters for simple functions
+
+// const addTwoNumbers2 = (a,b) => (a + b); also valid
+const addTwoNumbers2 = (a,b) => a + b; 
+let sum2 = addTwoNumbers2(6,4);
+console.log(sum2)
 
 // Implicit Returns
 
+const saySomething = message => console.log(message);
+saySomething("Hello there!!");
+
+
+const sayHello = () => {
+    return console.log('hello');
+}
+
+sayHello();
 // Returning Multiple Lines
+
+const returnMultipleLines = () => (
+    `<p>
+        This is a multiline string
+    </p>`
+)
+console.log(returnMultipleLines());
